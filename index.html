@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
     <title></title>
 </head>
 <body>
 <form id="form">
-    <input type="text" name="x" required>
-    <input type="text" name="y" required>
-    Select operation:
-    <select name="op">
-        <option value="sum">Sum</option>
-        <option value="subtraction">Subtraction</option>
-        <option value="multiplication">Multiplication</option>
-        <option value="division">Division</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Calc">
+    <div class="container">
+        <label for="">Value 1</label>
+        <input type="number" class="input" name="x" required>
+        <label for="">Value 2</label>
+        <input type="number" class="input" name="y" required>
+        
+        <div class="container2">
+            <label for=""> Operation:</label>
+            <br>
+            <select name="op">
+                <option selected value=""></option>
+                <option value="sum">Sum</option>
+                <option value="subtraction">Subtraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+            <input class="btn" type="submit" value="Calculate">
+        </div>
+        <br>
+        <div id="rs">Result: </div>
+
+    </div>
 </form>
-
-<div id="rs"></div>
-
 <script src="app.js"></script>
 </body>
 </html>

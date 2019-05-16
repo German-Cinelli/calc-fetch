@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e){
         .then( data => {
             if(data === 'err'){
                 rs.innerHTML = `
-                    error
+                    Result: Error
                 `
             } else {
                 rs.innerHTML = `
